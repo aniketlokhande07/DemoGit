@@ -1,24 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mWJ-Bt-Pqx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdQ-jF-ajS">
+                                <rect key="frame" x="20" y="258" width="335" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PHm-pc-gpW">
+                                        <rect key="frame" x="10" y="10" width="315" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ICY-Py-SBd">
+                                        <rect key="frame" x="10" y="60" width="315" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmK-Sd-1Gb">
+                                        <rect key="frame" x="132" y="112" width="71" height="30"/>
+                                        <color key="backgroundColor" red="0.19944614429999999" green="0.39964515779999998" blue="0.60909234420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="Wca-es-W20"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.19944614429999999" green="0.39964515779999998" blue="0.60909234420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LoginApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZ9-Oz-xBd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80466767130000005" green="0.80466767130000005" blue="0.80466767130000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="0E8-Cd-0AF"/>
+                                    <constraint firstItem="ICY-Py-SBd" firstAttribute="top" secondItem="PHm-pc-gpW" secondAttribute="bottom" constant="20" id="O7z-LV-PwQ"/>
+                                    <constraint firstItem="ICY-Py-SBd" firstAttribute="leading" secondItem="PHm-pc-gpW" secondAttribute="leading" id="TsG-Oe-2XU"/>
+                                    <constraint firstAttribute="bottom" secondItem="XmK-Sd-1Gb" secondAttribute="bottom" constant="8" id="UzY-wE-QCc"/>
+                                    <constraint firstItem="ICY-Py-SBd" firstAttribute="trailing" secondItem="PHm-pc-gpW" secondAttribute="trailing" id="XDV-tc-WJY"/>
+                                    <constraint firstItem="PHm-pc-gpW" firstAttribute="top" secondItem="QdQ-jF-ajS" secondAttribute="top" constant="10" id="aCa-VD-YbF"/>
+                                    <constraint firstAttribute="trailing" secondItem="PHm-pc-gpW" secondAttribute="trailing" constant="10" id="ds5-VO-KnD"/>
+                                    <constraint firstItem="XmK-Sd-1Gb" firstAttribute="centerX" secondItem="QdQ-jF-ajS" secondAttribute="centerX" id="m41-8X-ONi"/>
+                                    <constraint firstItem="PHm-pc-gpW" firstAttribute="leading" secondItem="QdQ-jF-ajS" secondAttribute="leading" constant="10" id="oiy-gr-qc7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QdQ-jF-ajS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="63e-7r-0fk"/>
+                            <constraint firstItem="QdQ-jF-ajS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dwY-jG-Z9h"/>
+                            <constraint firstItem="QdQ-jF-ajS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eAK-Hl-1gV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QdQ-jF-ajS" secondAttribute="trailing" constant="20" id="eOm-80-oh3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Login" id="Vke-Xm-15j"/>
+                    <connections>
+                        <outlet property="email" destination="PHm-pc-gpW" id="eWj-k0-2f7"/>
+                        <outlet property="txtpassword" destination="ICY-Py-SBd" id="MBp-o1-T37"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="512.79999999999995" y="196.55172413793105"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yyn-Zm-ZhX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mWJ-Bt-Pqx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rsp-F2-FM0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.19944614429999999" green="0.39964515779999998" blue="0.60909234420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uwE-yg-BID"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vK-vy-TUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-244" y="197"/>
         </scene>
     </scenes>
 </document>
