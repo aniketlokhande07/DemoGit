@@ -37,7 +37,12 @@ class ViewController: UIViewController,UITextFieldDelegate{
         if ((email.text?.trimmingCharacters(in: .whitespaces) != nil ) && (txtpassword.text?.trimmingCharacters(in: .whitespaces)) != nil){
             
             let alert = UIAlertController(title: "Demo", message: "Login Successfully.", preferredStyle: .alert)
-            let Ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+            let Ok = UIAlertAction(title: "OK", style: .default, handler: {
+                action in
+                let controller = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                self.present(controller, animated: true, completion: nil)
+                
+            })
             alert.addAction(Ok)
             present(alert, animated: true, completion: nil)
             

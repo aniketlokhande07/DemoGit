@@ -84,7 +84,7 @@
         <!--Home View Controller-->
         <scene sceneID="ZYS-4U-cZI">
             <objects>
-                <viewController id="miw-sr-cCn" customClass="HomeViewController" customModule="DemoGit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="HomeViewController" storyboardIdentifier="HomeViewController" id="miw-sr-cCn" customClass="HomeViewController" customModule="DemoGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8a7-gd-mCV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
