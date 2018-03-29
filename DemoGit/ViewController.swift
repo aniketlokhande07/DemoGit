@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController,UITextFieldDelegate{
 
@@ -19,7 +20,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
        
         email.delegate = self
         txtpassword.delegate = self
-        
+        var str = "aniket"
         // Do any additional setup after loading the view, typically from a nib.
         
     }
