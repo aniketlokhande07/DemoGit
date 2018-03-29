@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var str = "welcome into sai"
+        var str = "welcome into sai to"
         
         
         // Do any additional setup after loading the view.
