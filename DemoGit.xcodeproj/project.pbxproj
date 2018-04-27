@@ -13,6 +13,8 @@
 		C5350C05206BA4B80057607F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5350C04206BA4B80057607F /* Assets.xcassets */; };
 		C5350C08206BA4B80057607F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5350C06206BA4B80057607F /* LaunchScreen.storyboard */; };
 		C5350C10206BB64C0057607F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5350C0F206BB64C0057607F /* HomeViewController.swift */; };
+		C54622A2209081CE00F6BBA6 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54622A1209081CE00F6BBA6 /* CalenderViewController.swift */; };
+		C54622A4209084EE00F6BBA6 /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54622A3209084EE00F6BBA6 /* customCell.swift */; };
 		EE337EA804E43B075E46C6EA /* Pods_DemoGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1EA7A25C0BADD76E4BE33E /* Pods_DemoGit.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +29,9 @@
 		C5350C04206BA4B80057607F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5350C07206BA4B80057607F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5350C09206BA4B80057607F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5350C0F206BB64C0057607F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C5350C0F206BB64C0057607F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C54622A1209081CE00F6BBA6 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		C54622A3209084EE00F6BBA6 /* customCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		C5350BF1206BA4B80057607F = {
 			isa = PBXGroup;
 			children = (
+				C54622A3209084EE00F6BBA6 /* customCell.swift */,
 				C5350BFC206BA4B80057607F /* DemoGit */,
 				C5350BFB206BA4B80057607F /* Products */,
 				09F7802163892CEF2165405F /* Pods */,
@@ -87,6 +92,7 @@
 				C5350C06206BA4B80057607F /* LaunchScreen.storyboard */,
 				C5350C09206BA4B80057607F /* Info.plist */,
 				C5350C0F206BB64C0057607F /* HomeViewController.swift */,
+				C54622A1209081CE00F6BBA6 /* CalenderViewController.swift */,
 			);
 			path = DemoGit;
 			sourceTree = "<group>";
@@ -214,7 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54622A2209081CE00F6BBA6 /* CalenderViewController.swift in Sources */,
 				C5350C00206BA4B80057607F /* ViewController.swift in Sources */,
+				C54622A4209084EE00F6BBA6 /* customCell.swift in Sources */,
 				C5350BFE206BA4B80057607F /* AppDelegate.swift in Sources */,
 				C5350C10206BB64C0057607F /* HomeViewController.swift in Sources */,
 			);
